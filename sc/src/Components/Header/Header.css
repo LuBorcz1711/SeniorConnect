@@ -1,0 +1,91 @@
+.header {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 2px solid #dcdcdc;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Logo */
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2d5be3;
+}
+
+/* Nav */
+.nav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+
+.nav a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+.nav a:hover {
+  color: #2d5be3;
+}
+
+/* Botão */
+.contact-button {
+  background-color: #2d5be3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+/* Hamburger (escondido no desktop) */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+
+  .nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: white;
+    width: 200px;
+
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    display: none;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .contact-button {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

@@ -1,0 +1,143 @@
+.section1 {
+  background-color: #f5f7fb;
+  padding: 80px 24px;
+}
+
+.section1-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* LEFT */
+.section1-left {
+  flex: 1;
+}
+
+.section1-left h1 {
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.section1-left p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* BOTÕES */
+.section1-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-primary,
+.btn-outline {
+  transition: all 0.25s ease;
+}
+
+.btn-primary {
+  background-color: #2d5be3;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #1f4ed8; /* um pouco mais escuro */
+  transform: translateY(-2px); /* leve subida */
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #2d5be3;
+  border: 2px solid #2d5be3;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background-color: #2d5be3;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-primary:hover,
+.btn-outline:hover {
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* RIGHT */
+.section1-right {
+  flex: 1;
+  position: relative;
+}
+
+.section1-right img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* CARD */
+.experience-card {
+  transition: all 0.25s ease;
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+  flex-direction: column;
+  align-items: center;  
+  justify-content: center; /* centraliza vertical */
+  text-align: center;
+}
+
+.experience-card:hover {
+  transform: translateY(-2px);
+}
+
+.experience-card strong {
+  font-size: 28px;
+  color: #2d5be3;
+  align-self: center;
+}
+
+.experience-card span {
+  display: block;
+  font-size: 14px;
+  color: #666;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .section1-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section1-buttons {
+    justify-content: center;
+  }
+
+  .experience-card {
+    margin-top: 16px;
+  }
+}
