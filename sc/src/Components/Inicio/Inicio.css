@@ -96,7 +96,7 @@
   transition: all 0.25s ease;
   position: absolute;
   bottom: -20px;
-  left: 20px;
+  right: 20px;
 
   background: white;
   padding: 20px;
