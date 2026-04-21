@@ -1,0 +1,92 @@
+.footer {
+  background-color: #101828;
+  padding: 50px 24px;
+}
+
+/* GRID ao invés de flex (melhor pra 4 colunas fixas) */
+.grid-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+
+/* coluna */
+.footer-col h4 {
+  color: #ffffff; /* branco forte */
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+/* título principal (azul claro) */
+.footer-col .title {
+  color: #60a5fa; /* azul claro */
+}
+
+/* textos */
+.footer-col p,
+.footer-col li {
+  color: #9ca3af; /* cinza */
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* lista */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* espaçamento entre itens */
+.footer-col li {
+  margin-bottom: 8px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .grid-footer {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.footer-bottom {
+  border-top: 1px solid #374151; 
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #9ca3af; 
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links button {
+  background: none;
+  border: none;
+  padding: 0;
+
+  color: #cbd5e1;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* hover igual link */
+.footer-links button:hover {
+  color: #60a5fa;
+}

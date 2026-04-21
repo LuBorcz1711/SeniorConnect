@@ -19,7 +19,7 @@
 }
 
 .section1-left h1 {
-  font-size: clamp(32px, 5vw, 56px);
+  font-size: clamp(30px, 5vw, 50px);
   font-weight: 700;
   color: #1a1a1a;
   margin-bottom: 20px;

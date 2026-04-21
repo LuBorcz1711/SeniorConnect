@@ -2,6 +2,7 @@ import './Inicio.css';
 import { useState } from 'react';
 import fotoInicio from '../../assets/fotoInicio.jpg'
 import Frente from '../../assets/frente.jpg'
+import { scrollToSection } from '../../ScrollToSection';
 
 export default function Inicio() {
 
@@ -23,11 +24,11 @@ export default function Inicio() {
           </p>
 
           <div className="section1-buttons">
-            <button className="btn-primary">
+            <button className="btn-primary" onClick={() => scrollToSection('contato')}>
               Contatos →
             </button>
 
-            <button className="btn-outline">
+            <button className="btn-outline" onClick={() => scrollToSection('sobre')}>
               Saiba Mais
             </button>
           </div>

@@ -1,0 +1,186 @@
+.galeria {
+    padding: 80px 40px;
+    background-color: #f3f7ff;
+    text-align: center;
+}
+
+/* HEADER */
+.galeria-header {
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.galeria-header h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 16px;
+}
+
+.galeria-header p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* GRID */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.galeria-mobile {
+  display: none;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .galeria-grid {
+    display: none;
+  }
+
+  .galeria-mobile {
+    display: block;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .galeria-mobile img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .galeria-mobile .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 12px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.6));
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 12px;
+  }
+}
+
+/* IMAGENS */
+.galeria-grid img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+    border-radius: 16px;
+
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* HOVER */
+.galeria-grid img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* RESPONSIVO */
+@media (max-width: 1024px) {
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .galeria-grid img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .galeria {
+        padding: 60px 20px;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-grid img {
+        height: 220px;
+    }
+
+    .galeria-header h2 {
+        font-size: 28px;
+    }
+
+    .galeria-header p {
+        font-size: 16px;
+    }
+}
+
+/* FUNDO ESCURO */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.9);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999;
+}
+
+.lightbox-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* IMAGEM */
+.lightbox-img {
+    max-width: 90vw;
+    max-height: 90vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+/* BOTÕES */
+.lightbox button {
+    position: absolute;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.lightbox button:hover {
+    transform: scale(1.2);
+}
+
+/* POSIÇÕES */
+.close {
+    top: 20px;
+    right: 30px;
+}
+
+.prev {
+    left: 30px;
+}
+
+.next {
+    right: 30px;
+}
