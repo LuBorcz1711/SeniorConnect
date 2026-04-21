@@ -1,6 +1,7 @@
 import './Inicio.css';
 import { useState } from 'react';
 import fotoInicio from '../../assets/fotoInicio.jpg'
+import Frente from '../../assets/frente.jpg'
 
 export default function Inicio() {
 
@@ -35,7 +36,7 @@ export default function Inicio() {
         {/* IMAGEM */}
         <div className="section1-right">
           <img
-            src={fotoInicio}
+            src={Frente}
             alt="Idosa e cuidadora felizes"
           />
 
