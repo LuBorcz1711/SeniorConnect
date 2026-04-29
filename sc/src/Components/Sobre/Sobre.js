@@ -8,7 +8,7 @@ export default function Sobre() {
 
         {/* HEADER */}
         <div className="sobre-header">
-          <h2>Por Que Escolher a Vila Serena?</h2>
+          <h2>Por Que Escolher a Casa de Repouso Vovó Maria?</h2>
           <p>
             Somos mais que uma casa de repouso. Somos uma família dedicada a proporcionar
             qualidade de vida, dignidade e felicidade.
