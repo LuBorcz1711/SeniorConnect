@@ -54,8 +54,10 @@
 }
 
 .btn-primary:hover {
-  background-color: #1f4ed8; /* um pouco mais escuro */
-  transform: translateY(-2px); /* leve subida */
+  background-color: #1f4ed8;
+  /* um pouco mais escuro */
+  transform: translateY(-2px);
+  /* leve subida */
 }
 
 .btn-outline {
@@ -76,7 +78,7 @@
 
 .btn-primary:hover,
 .btn-outline:hover {
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* RIGHT */
@@ -102,11 +104,12 @@
   padding: 20px;
   border-radius: 12px;
 
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 
   flex-direction: column;
-  align-items: center;  
-  justify-content: center; /* centraliza vertical */
+  align-items: center;
+  justify-content: center;
+  /* centraliza vertical */
   text-align: center;
 }
 
@@ -139,5 +142,14 @@
 
   .experience-card {
     margin-top: 16px;
+    padding: 15px;
+  }
+
+  .experience-card strong {
+    font-size: 24px;
+  }
+
+  .experience-card span {
+    font-size: 12px;
   }
 }

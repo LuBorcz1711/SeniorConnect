@@ -55,16 +55,20 @@ export default function Contato() {
             mensagem
         });
 
-        const message = `
-            Olá, meu nome é ${nome}.
-            Tipo de interesse: ${tipo}
-            Mensagem:
-            ${mensagem}`;
+        const message = 
+`Olá, meu nome é ${nome}. 
+Tenho interesse no seguinte assunto: ${tipo}.
+
+Mensagem:
+${mensagem}
+
+Aguardo seu retorno.
+Desde já, agradeço pela atenção.`;
 
         const url = `https://wa.me/5541998220040?text=${encodeURIComponent(message)}`;
         window.open(url, "_blank");
 
-        setEnviado(true);
+        setEnviado(true);  
     };
 
     return (
@@ -155,9 +159,9 @@ export default function Contato() {
                                 <option value="" disabled>
                                     Escolha uma opção
                                 </option>
-                                <option value="visita">Visita</option>
-                                <option value="internacao">Internação</option>
-                                <option value="info">Informações gerais</option>
+                                <option value="Visita">Visita</option>
+                                <option value="Internação">Internação</option>
+                                <option value="Infomações Gerais">Informações gerais</option>
                             </select>
                             {erros.tipo && <span className="erro">{erros.tipo}</span>}
                         </div>
