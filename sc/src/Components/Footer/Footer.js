@@ -34,7 +34,7 @@ export default function Footer() {
                     <ul>
                         <li>Cuidados Médicos</li>
                         <li>Fisioterapia</li>
-                        <li>Terapia Ocupacional</li>
+                        <li>Musicoterapia</li>
                         <li>Nutricionista</li>
                     </ul>
                 </div>
@@ -43,7 +43,7 @@ export default function Footer() {
                     <h4>Contato</h4>
                     <ul>
                         <li>(41) 99982-1008</li>
-                        <li>casarepouso.vovomaria@gmail.com</li>
+                        <li>vovomariacasaderepouso@gmail.com</li>
                         <li>Rua Bortolo Gusso, 194</li>
                         <li>Capão Raso - Curitiba, PR</li>
                     </ul>

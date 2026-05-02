@@ -25,22 +25,26 @@
 
 .contact-content {
   display: flex;
-  gap: 90px;
-  justify-content: space-between;
+
+  justify-content: center;
+  align-items: "center";
 }
 
 /* Coluna da Esquerda: Informações */
 .contact-info {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 100%;
 }
 
 .info-item {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f8fafc;
 }
 
 .icon-wrapper {
@@ -67,6 +71,9 @@
   color: #475569;
   line-height: 1.6;
   font-size: 0.95rem;
+
+  word-break: break-word;       /* 🔥 quebra palavras longas */
+  overflow-wrap: break-word;    /* 🔥 fallback moderno */
 }
 
 /* Coluna da Direita: Formulário */
@@ -144,6 +151,10 @@
   .contact-content {
     flex-direction: column;
     gap: 50px;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr; /* MOBILE */
   }
 }
 

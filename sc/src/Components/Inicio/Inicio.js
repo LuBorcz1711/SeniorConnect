@@ -42,7 +42,7 @@ export default function Inicio() {
           />
 
           <div className="experience-card">
-            <strong>25+</strong>
+            <strong>28+</strong>
             <span>Anos de Experiência</span>
           </div>
         </div>

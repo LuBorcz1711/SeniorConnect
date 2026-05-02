@@ -91,7 +91,7 @@ Desde já, agradeço pela atenção.`;
                             <p>
                                 Rua Bortolo Gusso, 194<br />
                                 Capão Raso - Curitiba, PR<br />
-                                CEP: xxxx - xxxx
+                                CEP: 81110 - 210
                             </p>
                         </div>
                     </div>
@@ -115,7 +115,7 @@ Desde já, agradeço pela atenção.`;
                         </div>
                         <div className="info-text">
                             <h3>E-mail</h3>
-                            <p>casarepouso.vovomaria@gmail.com</p>
+                            <p>vovomariacasaderepouso@gmail.com</p>
                         </div>
                     </div>
 
@@ -133,9 +133,10 @@ Desde já, agradeço pela atenção.`;
                     </div>
 
                 </div>
+            </div>
 
                 {/* Lado Direito - Formulário */}
-                <div className="contact-form-container">
+                {/*<div className="contact-form-container">
                     <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
 
                         <div className="form-group">
@@ -182,8 +183,8 @@ Desde já, agradeço pela atenção.`;
                         </button>
 
                     </form>
-                </div>
-            </div>
+                </div>*/}
+            
         </div>
     );
 }

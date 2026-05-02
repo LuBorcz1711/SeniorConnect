@@ -32,7 +32,7 @@
 /* GRID */
 .servicos-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 
@@ -40,7 +40,7 @@
 .servico-card {
   background: white;
   border-radius: 16px;
-  padding: 24px;
+  padding: 18px;
 
   display: flex;
   gap: 16px;
@@ -86,7 +86,7 @@
 }
 
 /* RESPONSIVO */
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .servicos-grid {
     grid-template-columns: repeat(2, 1fr);
   }

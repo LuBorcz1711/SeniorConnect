@@ -30,7 +30,7 @@ export default function Sobre() {
             <div className="icon"><FaShieldAlt /></div>
             <h4>Segurança 24/7</h4>
             <p>
-              Monitoramento contínuo com câmeras e equipe médica disponível em tempo integral.
+              Monitoramento com câmeras e equipe médica disponível em tempo integral.
             </p>
           </div>
 
